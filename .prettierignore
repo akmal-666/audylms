@@ -1,0 +1,8 @@
+# Defaults
+build
+.svelte-kit
+node_modules
+dist
+
+# Generated
+src/lib/types/database.types.ts

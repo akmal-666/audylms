@@ -1,0 +1,16 @@
+{
+	"functions": {
+		"src/routes/api/files/upload/+server.ts": {
+			"maxDuration": 30
+		},
+		"src/routes/api/drive/init/+server.ts": {
+			"maxDuration": 30
+		},
+		"src/routes/(admin)/admin/backup/+page.server.ts": {
+			"maxDuration": 60
+		},
+		"src/routes/api/reports/+server.ts": {
+			"maxDuration": 30
+		}
+	}
+}

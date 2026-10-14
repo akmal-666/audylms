@@ -1,0 +1,28 @@
+node_modules
+
+# SvelteKit
+/.svelte-kit
+/build
+
+# Env files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Vercel
+/.vercel
+
+# Bun
+bun.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+
+# Supabase local
+supabase/.branches
+supabase/.temp

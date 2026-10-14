@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   AUDY LEARNING CENTRE — Design System
+   Brand: premium corporate LMS, clean, calm, professional
+   ============================================================ */
+
+@theme {
+	/* Brand colours */
+	--color-primary: #1c50a7;
+	--color-primary-light: #2563c4;
+	--color-primary-dark: #163d82;
+
+	--color-secondary: #81baf1;
+	--color-secondary-light: #aad2f8;
+	--color-secondary-dark: #5a9de8;
+
+	--color-accent: #deb8ce;
+	--color-accent-light: #ebd2e0;
+	--color-accent-dark: #c99ab5;
+
+	--color-highlight: #f2ac44;
+	--color-highlight-light: #f7c572;
+	--color-highlight-dark: #e09520;
+
+	/* Surfaces */
+	--color-surface: #ffffff;
+	--color-bg: #f8f9fc;
+	--color-bg-subtle: #f1f3f8;
+
+	/* Borders */
+	--color-border: #e4e8ef;
+	--color-border-strong: #c9d0dc;
+
+	/* Text */
+	--color-text: #1a1f2e;
+	--color-text-secondary: #4b5563;
+	--color-muted: #6b7280;
+	--color-placeholder: #9ca3af;
+
+	/* Status */
+	--color-success: #22c55e;
+	--color-success-bg: #f0fdf4;
+	--color-warning: #f59e0b;
+	--color-warning-bg: #fffbeb;
+	--color-error: #ef4444;
+	--color-error-bg: #fef2f2;
+	--color-info: #3b82f6;
+	--color-info-bg: #eff6ff;
+
+	/* Typography */
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace;
+
+	/* Border radius */
+	--radius-sm: 0.25rem; /* 4px — inputs, chips */
+	--radius-md: 0.5rem; /* 8px — cards, buttons */
+	--radius-lg: 0.75rem; /* 12px — modals, panels */
+	--radius-xl: 1rem; /* 16px — page sections */
+}
+
+/* ============================================================
+   Base Reset & Body
+   ============================================================ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	line-height: 1.5;
+	min-height: 100vh;
+}
+
+/* ============================================================
+   Focus Ring — accessible, on-brand
+   ============================================================ */
+:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+	border-radius: var(--radius-sm);
+}
+
+/* ============================================================
+   Scrollbar — subtle, matches design system
+   ============================================================ */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-border-strong);
+	border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-muted);
+}
+
+/* ============================================================
+   Selection
+   ============================================================ */
+::selection {
+	background: var(--color-secondary);
+	color: var(--color-primary-dark);
+}
